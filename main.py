@@ -5,9 +5,12 @@ def a_power_b (a,b):
     return acu
 
 
-a=int(input("Numero 1: "))
-b=int(input("Exponente: "))
-print(a_power_b(a,b))
+while True:
+    a=int(input("Numero 1: "))
+    if a==0 :
+        break
+    b=int(input("Exponente: "))
+    print(a_power_b(a,b))
 
 
 
