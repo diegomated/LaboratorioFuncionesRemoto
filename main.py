@@ -1,15 +1,25 @@
 def a_power_b (a,b):
     acu=a
-    for i in range (0,b-1,1):
-        acu=a*acu
-    
-    if b==0 :
-        acu=1
-        print("resultado: ", acu, "\n")
-        return acu
+    if b>=0 :
+        for i in range (0,b-1,1):
+            acu=a*acu
+        if b==0 :
+            acu=1
+            print("resultado: ", acu, "\n")
+            return acu
+        else:
+            print("resultado: ", acu, "\n")
+            return acu
     else:
-        print("resultado: ", acu, "\n")
-        return acu
+        for i in range (0,b-1,-1):
+            acu=acu/a
+        if b==0 :
+            acu=1
+            print("resultado: ", acu, "\n")
+            return acu
+        else:
+            print("resultado: ", acu, "\n")
+            return acu
 
 
 cont=0
