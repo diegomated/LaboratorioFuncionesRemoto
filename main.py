@@ -43,9 +43,9 @@ while True:
         try:
             while True:
                 b=int(input("Exponente: "))
-                if b>999 :
+                if b>999 or b<-999 :
                     contE+=1
-                    print("Exponente demasiado grande (rango 0-999)")
+                    print("Exponente demasiado grande (rango -999-999)")
                 else :
                     break
             break
