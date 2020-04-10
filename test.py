@@ -1,9 +1,9 @@
-def perfect_number (a):
+def perfect_number (num):
     acu=0
-    for i in range (0,a,1):
-        if i%2==0 :
+    for i in range (1,num,1):
+        if num%i==0 :
             acu=acu+i
-    if (acu==a):
+    if (acu==num):
         print("El numero es perfecto, como yo")
     else:
         print("El numero no es yo, osea no es perfecto")
